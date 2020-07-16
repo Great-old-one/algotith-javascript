@@ -1,4 +1,4 @@
-import {mulBase, isPlainrome, isClose} from "../src/lession1";
+import {isClose, isPlainrome, mulBase} from "./lession1";
 
 test("mulBase", () => {
     expect(mulBase(4, 2)).toBe(100);

@@ -1,5 +1,5 @@
 /**
- * 基数拍数
+ * 基数排序
  * 核心思想：将每一位上的数字放入到对应的队列中
  */
 export function baseSort(nums: number[]) {
@@ -9,7 +9,7 @@ export function baseSort(nums: number[]) {
     }
     distribute(nums, queues, 10, 1);
     distribute(collect(queues), queues, 10, 10);
-    return collect(queues)
+    return collect(queues);
 }
 
 function distribute(nums: number[], queues: number[][], n: number, digit: 1 | 10) {
